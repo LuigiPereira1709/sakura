@@ -1,28 +1,46 @@
 local options = require("sakura.config").options
 local variants = {
-	main = {
-		_nc = "#121014",
-		base = "#121014",
-		surface = "#1f1d2e", -- Keep partially dark or adjust? Let's use #121014 or slightly lighter
-		overlay = "#26233a", -- Adjust
-		muted = "#6e6a86",
-		subtle = "#908caa",
-		text = "#e0def4",
-		love = "#ffb8d1",
-		gold = "#ffb8d1",
-		rose = "#ffb8d1",
-		pine = "#ffb8d1",
-		foam = "#ffffff", -- White for contrast
-		iris = "#ffb8d1",
-		leaf = "#ffb8d1", -- Add leaf too
-		highlight_low = "#21202e",
-		highlight_med = "#403d52",
-		highlight_high = "#524f67",
+	yoru = {
+		_nc = "#050505",
+		base = "#050505",
+		surface = "#121212",
+		overlay = "#1f1f1f",
+		muted = "#555555",
+		subtle = "#808080",
+		text = "#dcdcdc",
+		love = "#f08fa5",
+		gold = "#d8b085",
+		rose = "#ffb3c3",
+		pine = "#8aa8a8",
+		foam = "#9ab8c2",
+		iris = "#c29abb",
+		leaf = "#95b595",
+		highlight_low = "#1a1a1a",
+		highlight_med = "#303030",
+		highlight_high = "#eb9fac",
+		none = "NONE",
+	},
+	yami = {
+		_nc = "#000000",
+		base = "#000000",
+		surface = "#0a0a0a",
+		overlay = "#141414",
+		muted = "#333333",
+		subtle = "#4f4f4f",
+		text = "#999999",
+		love = "#8a4b5d",
+		rose = "#a6858e",
+		iris = "#7d6678",
+		gold = "#8f806d",
+		pine = "#586e6e",
+		foam = "#637680",
+		leaf = "#697869",
+		highlight_low = "#0d0d0d",
+		highlight_med = "#1a1a1a",
+		highlight_high = "#261518",
 		none = "NONE",
 	},
 }
-
--- Removed moon and dawn
 
 if options.palette ~= nil and next(options.palette) then
 	-- handle variant specific overrides

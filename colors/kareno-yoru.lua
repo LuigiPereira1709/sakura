@@ -1,1 +1,2 @@
-require("kareno").colorscheme("yami")
+package.loaded["kareno"] = nil
+require("kareno").colorscheme("yoru")

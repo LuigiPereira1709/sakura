@@ -1219,6 +1219,11 @@ end
 function M.colorscheme(variant)
 	config.extend_options({ variant = variant })
 
+	package.loaded["kareno.palette"] = nil
+	package.loaded["kareno.utilities"] = nil
+	require("kareno.palette")
+	require("kareno.utilities")
+
 	vim.opt.termguicolors = true
 	if vim.g.colors_name then
 		vim.cmd("hi clear")
